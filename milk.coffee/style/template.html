@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title><!--{@title}-->Page Title<!--{end}--></title>
+	<meta name="keywords" content="#{meta.keywords}" />
+	<meta name="description" content="#{meta.description}" />
+	<meta name="author" content="#{meta.author}" />
+	<meta name="milk:ajax.links" content="/japanese/data/links.json" />
+	<meta name="milk:hsql.posts" content="SELECT * FROM japanese LIMIT 3" />
+	<link rel="stylesheet" type="text/css" href="/style/style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:700,400,400italic,700italic' rel='stylesheet' type='text/css' />
+</head>
+
+<body>	
+	<header>
+		<div class="center">
+			<h1><a href="/"><!--{meta.og_site_name}-->Site Title<!--{end}--></a></h1>
+			<nav>
+				<!--{link in ajax.links}-->
+				<a href="#{link.url}"><!--{link.title}-->Home<!--{end}--></a>
+				<!--{more}-->
+				<a href="#">About</a>
+				<a href="#">Portfolio</a>
+				<a href="#">Blog</a>
+				<a href="#">Contact</a>
+				<!--{end}-->
+			</nav>
+		</div>
+	</header>
+	
+	<section id="main-content">
+		<div class="center">
+			<!--{@body}-->
+			<h1>Page Title</h1>
+			<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<h2>Section Title</h2>
+			<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<h2>Section Title</h2>
+			<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<!--{end}-->
+		</div>
+	</section>
+	
+	<footer>
+		<div class="center">
+			<p><a class="made-in-osscafe" href="http://www.osscafe.net/">Made in OSSCafe</a></p>
+			<p><!--{meta.copyright}-->&copy; 2012 - Your Company Name<!--{end}--></p>
+		</div>
+	</footer>
+	
+	<a href="http://github.com/cognitom/milk.coffee"><img class="github-ribon" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+</body>
+
+</html>
