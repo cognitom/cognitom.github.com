@@ -25,13 +25,13 @@ footer, header, hgroup, menu, nav, section {display: block}
 body { background:url(images/body.png) }
 
 body>header { background: url(images/header.png); height:64px; box-shadow: 0px 1px 3px #444; position:fixed; top:0; left:0; right:0; z-index:99 }
-body>header>.center { position:relative; width:900px; margin:0 auto }
-body>header>.center>h1 { display:none }
-body>header>.center>nav { position:absolute; top:23px; right:50px }
-body>header>.center>nav>a { margin:0 .5em; color:#666; font-weight:bold; text-decoration:none; text-shadow: #fff 1px 1px 0 }
+body>header div.center { position:relative; width:900px; margin:0 auto }
+body>header div.center>h1 { display:none }
+body>header div.center>nav { position:absolute; top:23px; right:50px }
+body>header div.center>nav>a { margin:0 .5em; color:#666; font-weight:bold; text-decoration:none; text-shadow: #fff 1px 1px 0 }
 
 #main-content { background: #FFF; padding:64px 0 3em }
-#main-content>.center { margin:.5em auto; width:900px; background: url(images/photo.png) no-repeat right top }
+#main-content div.center { margin:.5em auto; width:900px; background: url(images/photo.png) no-repeat right top }
 #main-content h1 { font-size:300% }
 #main-content h1.logo { height:98px; text-indent:-9999px; background: url(images/logo.png) left bottom no-repeat; margin-bottom:0 }
 #main-content p.logo-desc { margin-top:0; text-indent:5px; color:#2B1917 }
@@ -51,14 +51,14 @@ body>header>.center>nav>a { margin:0 .5em; color:#666; font-weight:bold; text-de
 
 
 body>footer { background: url(images/footer.png) repeat-x; box-shadow: 0px -3px 3px #999 }
-body>footer>.center { width:900px; margin:0 auto; padding:30px 0; color:#999; text-align: center }
-body>footer>.center p { margin:1em 0; font-size:13px }
-body>footer>.center a.made-in-osscafe { display:inline-block; width: 320px; height:70px; text-indent:-9999px; background: url(images/made-in-osscafe.png) no-repeat }
+body>footer div.center { width:900px; margin:0 auto; padding:30px 0; color:#999; text-align: center }
+body>footer div.center p { margin:1em 0; font-size:13px }
+body>footer div.center a.made-in-osscafe { display:inline-block; width: 320px; height:70px; text-indent:-9999px; background: url(images/made-in-osscafe.png) no-repeat }
 
 img.github-ribon { position: absolute; top: 0; right: 0; border: 0; z-index:99; }
 
 
-body>header>.center>nav>a,
+body>header div.center>nav>a,
 #main-content h1,
 #main-content h2,
 #main-content p.logo-desc,
