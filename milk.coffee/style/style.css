@@ -19,6 +19,9 @@ table, tbody, tfoot, thead, th, tr, tdvideo, tt,
 u, ul, 
 var { background: transparent; border: 0 none; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline }
 
+aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block}
+
 body { background:url(images/body.png) }
 
 body>header { background: url(images/header.png); height:64px; box-shadow: 0px 1px 3px #444; position:fixed; top:0; left:0; right:0; z-index:99 }
